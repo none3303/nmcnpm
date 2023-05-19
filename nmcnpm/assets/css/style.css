@@ -1,0 +1,130 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+a{
+    text-decoration: none;
+}
+
+
+#header {
+    height: 100px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    flex-wrap: nowrap;
+
+}
+#nav{
+    background-color: #ff000d;
+    line-height: 34.5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav li {
+    /* display: inline-block; */
+    
+}
+#nav >li {
+    display: inline-block;
+}
+#nav li a {
+    color: #FFF;
+    padding: 0 20px ;
+    
+    position: relative;
+}
+#nav >li >a{
+    text-transform: uppercase;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    display : none;
+    position: absolute;
+    background-color: beige;
+    
+    
+}
+#nav .subnav a{
+    color: black;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.block  {
+    position: relative;
+    flex-flow: wrap;
+}
+
+#icon{
+    position: relative;
+    display: inline-block;
+}
+#search{
+    display: inline-flex;
+    margin: 15px 25px;
+}
+#slider {
+    margin-top: 100px;
+    padding-top: 50%;
+    background: url('/nmcnpm/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#content {
+    margin-top: 30px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+#content li{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+
+#footer {
+    height: 470px;
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 0;
+}
+#footer div {
+    display: inline-block;
+}
+.col-lg-12 {
+    width: 100%;
+}
+.social-link li a {
+    /* padding-left: 50%; */
+    display: inline-block;
+    list-style-type: none;
+}
+.title-01{
+    width: 100%;
+    text-align: center;
+}
+
+
