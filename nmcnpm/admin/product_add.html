@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thêm sản phẩm</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/pd_add_style.css" />
+</head>
+<div class="main-content">
+    <div style="height: 50px;"></div>
+    <h1>Thêm sản phẩm</h1>
+    <div id="content-box">
+        <div class="container">
+            <a href="/nmcnpm/admin/UI_admin.html" style="margin: 10px 0;">Quay lại danh sách sản phẩm </a><br>
+        </div>
+        <div style="margin: 10px 0"></div>
+        <form id="product-form" method="POST" action="">
+            <div class="clear-both"></div>
+            <div class="wrap-field">
+                <label>Tên sản phẩm: </label>
+                <input type="text" name="name" value="" />
+                <div class="clear-both"></div>
+            </div>
+            <div class="wrap-field">
+                <label>Giá sản phẩm: </label>
+                <input type="text" name="price" value="" />
+                <div class="clear-both"></div>
+            </div>
+            <div class="wrap-field">
+                <label>Ảnh sản phẩm: </label>
+                <div class="right-wrap-field">
+                    <input type="file" name="image" />
+                </div>
+                <div class="clear-both"></div>
+            </div>
+            <div class="wrap-field">
+                <label>Nội dung: </label>
+                <textarea name="content" id="product-content"></textarea>
+                <div class="clear-both"></div>
+            </div>
+        </form>
+        <div class="clear-both"></div>
+    </div>
+</div>
+
+</html>

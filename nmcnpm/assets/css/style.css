@@ -23,8 +23,56 @@ a{
     flex-wrap: nowrap;
 
 }
+#menu_khachhang{
+    display: inline-block;
+}
+#menu{
+    list-style-type: none;
+    display: flex;
+    color: black;
+}
+#menu img{
+    margin-right: 5px;
+}
+#menu>li{
+    margin: 10px 50px;
+    vertical-align: middle;
+}
+#menu >a{
+    vertical-align: middle;
+}
+#menu li a{
+    margin-top: 10px;
+    color: #000;
+}
+#menu  li:hover li:hover {
+    background-color: #dcdada;
+}
+#taikhoan_sub{
+    display: none;
+    position: absolute;
+    background-color: #f3f3f3;
+    list-style-type: none;
+    /* padding: 20px; */
+    width: 100px;
+    z-index: 3;
+    line-height: 25px;
+    /* margin-left: 10px; */
+}
+#taikhoan_sub li a{
+    /* padding-left: 10px; */
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+#menu_khachhang li:hover #taikhoan_sub{
+    display:block;
+
+}
+
 #nav{
-    background-color: #ff000d;
+    background-color: #e23a42;
     line-height: 34.5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -34,17 +82,13 @@ a{
 #nav, .subnav{
     list-style-type: none;
 }
-#nav li {
-    /* display: inline-block; */
-    
-}
+
 #nav >li {
     display: inline-block;
 }
 #nav li a {
     color: #FFF;
     padding: 0 20px ;
-    
     position: relative;
 }
 #nav >li >a{
@@ -52,6 +96,9 @@ a{
 }
 #nav li:hover .subnav{
     display: block;
+}
+#nav li:hover .subnav li:hover {
+    background-color: rgb(213, 171, 107);
 }
 #nav .subnav{
     display : none;
@@ -86,10 +133,10 @@ a{
 }
 #search{
     display: inline-flex;
-    margin: 15px 25px;
+    margin: 15px 170px;
 }
 #slider {
-    margin-top: 100px;
+    margin-top: 50px;
     padding-top: 50%;
     background: url('/nmcnpm/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
@@ -110,17 +157,29 @@ a{
     background-color: aliceblue;
     display: inline-block;
     padding: 0;
+    margin: 20px;
+}
+#footerForm{
+    display: inline-block;
+    margin-bottom: 30px;
 }
 #footer div {
     display: inline-block;
 }
 .col-lg-12 {
     width: 100%;
+    margin-bottom: 30px;
 }
-.social-link li a {
+
+.social-link>li {
     /* padding-left: 50%; */
     display: inline-block;
     list-style-type: none;
+    position: relative;
+
+}
+.theodoi{
+    float: right;
 }
 .title-01{
     width: 100%;

@@ -5,14 +5,19 @@
             Giỏ Hàng Của Tôi
         </title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./css/styleGioHang.css">
+        <link rel="stylesheet" href="./assets/css/styleGioHang.css">
     </head>
     <body>
-        <div id="header">
-            <div id="icon">
+        <div id="header1">
+            <a href="/nmcnpm/index.html" id="icon">
                 <img src="https://u6wdnj9wggobj.vcdn.cloud/media/logo/stores/1/logo-254x76.png" alt="">
-            </div>
-        <div id="giohang">
+            </a>
+        </div>
+        <div id="header">
+            
+            <div style="height: 50px;"></div>
+        
+            <div id="giohang">
             <h3>Giỏ hàng</h3>
             <table>
                 <tr>
@@ -20,7 +25,7 @@
                     <th>Tên sản phẩm</th>
                     <th>Đơn giá</th>
                     <th>Số lượng</th>
-                    <th>Thàn tiền</th>
+                    <th>Thành tiền</th>
                     <th>Xóa</th>
                   </tr>
                   <!-- từ đây trở xuống là sản phẩm -->
@@ -35,12 +40,186 @@
                   </tr>
                   
             </table>
-        </div>
-        <div id="thanhtoan">
-            <p>TỔNG CỘNG</p> 
+            </div>
+            <div id="thanhtoan">
+            <p style="margin: 10px 0;">TỔNG CỘNG</p> 
             <p>Tổng tiền</p>    
+            <p>.</p>
+            <p></p>
             <a href="">Thực Hiện Thanh Toán</a>      
             
-        </div>
+            </div>
+            <div id="footer">
+            <footer class="footer footer1">
+
+                <div class="footer-container">
+                    <div class="middle-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"style="width:100%" > 
+                                    <div class="footerForm" style="
+            width: 100%;
+            ">
+                                        <div style="
+            align-items: center;
+            margin-left: 10%;
+                ">
+                                            <h5 class="title-01 margin-bottom15" style="
+                margin: 20px 0;
+                    ">ĐĂNG KÍ NHẬN THÔNG TIN KHUYẾN MÃI</h5>
+                                            
+            <div class="block newsletter" id="popup-newsletter">
+                <div class="content">
+                    <form class="form subscribe" novalidate="" action="" method="post" id="newsletter-validate-detail-footer">
+                        <div class="field form-group newsletter">
+                            <div class="control">
+                                <input name="email" type="email" id="newsletter-footer" placeholder="Nhập địa chỉ email … " data-validate="{required:true, 'validate-email':true}" fdprocessedid="hxyvnp">
+                                <div class="actions">
+                                    <button class="action subscribe btn btn-primary" type="submit" fdprocessedid="j1v95q">
+                                        <span><span style="display: block;" class="icon icon-mkd-mail"></span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- <div id="custom-newsletter-error"></div> -->
+                    <div class="messages">
+                        <div class="message message-error error"></div>
+                        <div class="message message-success success"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .newsletter .message {
+                    display: none;
+                }
+            </style>
+            
+            
+            <!-- <div class="block newsletter newsletter-content" id="popup-newsletter">
+                <div class="content">
+                    <form class="form subscribe" novalidate action="https://www.mykingdom.com.vn/newsletter/subscriber/new/" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail">
+                        <div class="field newsletter">
+                            <label class="label" for="newsletter"><span>Đăng ký để nhận bản tin của chúng tôi:</span></label>
+                            <div class="control">
+                                <input name="email" type="email" id="newsletter" placeholder="Nhập email để nhận bản tin" data-validate="{required:true, 'validate-email':true}" />
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="action subscribe primary" title="Đăng ký" type="submit">
+                                <span>Đăng ký</span>
+                            </button>
+                        </div>
+                        <div class="messages">
+                            <div class="message message-error error">
+                                <div></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+            
+            <!-- <script type="text/x-magento-init">
+                {
+                    "#newsletter-validate-detail-footer": {
+                        "Magento_Newsletter/js/subscribe": {}
+                    }
+                }
+            </script> -->
+                                        </div>
+                                        <div class="theodoi" style="
+                                            margin-right: 25%;
+                                    ">
+                                            <h5 class="title-01" style="
+                            margin: 20px 0;
+                        ">THEO DÕI MKD</h5>
+                                            <ul class="social-link" style="list-style-type: none;display: inline-block;padding-left: revert;position: relative;">
+                                                <li><a href="https://www.facebook.com/mykingdomvn/" target="_blank"><img src="https://u6wdnj9wggobj.vcdn.cloud/static/version1684427202/frontend/Mgs/mkingdom/vi_VN/images/facebook.png" alt="facebook icon"></a></li>
+                                                <li><a href="https://www.instagram.com/mykingdom_vietnam/" target="_blank"><img src="https://u6wdnj9wggobj.vcdn.cloud/static/version1684427202/frontend/Mgs/mkingdom/vi_VN/images/instagram.png" alt="ins icon"></a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCGeeH3wqD2AWB3NsyBwVrbw" target="_blank"><img src="https://u6wdnj9wggobj.vcdn.cloud/static/version1684427202/frontend/Mgs/mkingdom/vi_VN/images/youtube.png" alt="youtube icon"></a></li>
+                                            </ul>
+                                                <!-- <li><a href="https://www.facebook.com/mykingdomvn/" target="_blank"><img src='https://u6wdnj9wggobj.vcdn.cloud/static/version1684427202/frontend/Mgs/mkingdom/vi_VN/images/facebook.png' alt="facebook icon"></a></li>
+                                                <li><a href="https://www.instagram.com/mykingdom_vietnam/" target="_blank"><img src='https://u6wdnj9wggobj.vcdn.cloud/static/version1684427202/frontend/Mgs/mkingdom/vi_VN/images/instagram.png' alt="ins icon"></a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCGeeH3wqD2AWB3NsyBwVrbw" target="_blank"><img src='https://u6wdnj9wggobj.vcdn.cloud/static/version1684427202/frontend/Mgs/mkingdom/vi_VN/images/youtube.png' alt="youtube icon"></a></li> -->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12" style="width: 300px;margin: 25px;vertical-align: top;top:0px">
+                                    <div class="block-contact">
+                                        <div class="block-contact--txt">
+                                            <div class="phoneContainer">
+                                                <h5 class="title-01 margin-bottom15">HOTLINE CHĂM SÓC KHÁCH HÀNG</h5>
+                                                <p class="footerPhone"><a href="tel:19001208">19001208</a></p>
+                                            </div>
+                                            <div>
+                                                <p><span>Từ thứ Hai đến thứ Bảy (08:00 - 17:00)</span></p>
+                                                <p><span>Chủ nhật (08:00 - 12:00)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p><a class="email-middle" href="mailto:hotro@mykingdom.com.vn"><span class="icon icon-mkd-mail margin-right10"></span>hotro@mykingdom.com.vn</a></p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" style="width: 300px;margin: 25px;vertical-align: top;">
+                                    <!-- Static block: footer_block_quick_link -->
+                                    <div class="mkdPolicy">
+            <h3 style="margin-bottom: 10px;">ĐIỀU KHOẢN &amp; CHÍNH SÁCH</h3>
+            <p><a href="https://www.mykingdom.com.vn/chinh-sach-giao-hang/" target="_self">- Chính sách giao hàng</a></p>
+            <p><a href="https://www.mykingdom.com.vn/chinh-sach-tich-luy-diem/" target="_self">- Chính sách tích lũy điểm</a></p>
+            <p><a href="https://www.mykingdom.com.vn/dieu-khoan-dieu-kien/" target="_self">- Điều khoản điều kiện</a></p>
+            </div>                    </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" style="width: 300px;margin: 25px;vertical-align: top;">
+                <!-- Static block: footer_customer_help -->
+                <div class="mkdSupportCustomer">
+            <h3 style="margin-bottom: 10px;">HỖ TRỢ KHÁCH HÀNG</h3>
+            <p><a href="https://www.mykingdom.com.vn/chinh-sach-bao-mat/" target="_self">- Chính sách bảo mật</a></p>
+            <p><a href="https://www.mykingdom.com.vn/chinh-sach-bao-hanh-doi-tra-hang-hoa/" target="_self">- Chính sách bảo hành đổi trả hàng hóa</a></p>
+            <p><a href="https://www.mykingdom.com.vn/chinh-sach-thanh-toan/" target="_self">- Chính sách thanh toán</a></p>
+            <div class="box-img"><a href="http://online.gov.vn/Home/WebDetails/729" target="_blank"><img style="width: 150px;" src="https://u6wdnj9wggobj.vcdn.cloud/media/wysiwyg/homepage/logoSaleNoti.png" alt=""></a></div>
+            </div>                    </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="width: 300px;margin: 25px;vertical-align: top;">
+            <!-- Static block: footer_block_infomation -->
+            <h5 style="font-size: 17px; text-align: center; margin-bottom: 10px;"><a title="ĐỊA CHỈ CỬA HÀNG" href="https://www.mykingdom.com.vn/storelocator">ĐỊA CHỈ CỬA HÀNG</a></h5>
+            <div class="box-img"><a style="display: block;" title="HỆ THỐNG CỬA HÀNG" href="https://www.mykingdom.com.vn/storelocator"><img style="width: 100%;" src="https://u6wdnj9wggobj.vcdn.cloud/media/wysiwyg/homepage/sub-banner-system-100.jpg" alt="HỆ THỐNG CỬA HÀNG"></a></div>                    </div>
+                        </div>
+                        <div class="middle-footer-end">
+                            <div class="container">
+                                                </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- <div class="footer__bottom" style="background-color: #efefef; color: #444;"><span>Công ty cổ phần Việt Tinh Anh</span><span>Số ĐKKD: 0309132354 do sở kế hoạch và đầu tư cấp ngày 14/07/09</span><br><span>Địa chỉ: 33-35 đường số D4, khu Đô thị mới Him Lam, Phường Tân Hưng, Quận 7, TP. Hồ Chí Minh</span><span>Điện thoại: 0286.2638.600</span></div> -->
+            <style xml="space"><!--
+                .footer__bottom{
+                    padding: 15px;
+                    text-align: center;
+                }
+                .footer__bottom span::after{
+                    content: ' - ';
+                    width: 2px;
+                    height: 2px;
+                    color: #fff;
+                }
+                .footer__bottom span:last-child:after{
+                    display: none;
+                }
+                @media (max-width: 767px){
+                    .footer__bottom{
+                        padding: 5px 10px;
+                        text-align: left;
+                    }
+                    .footer__bottom span{
+                        display: block;
+                    }
+                    .footer__bottom span::after{
+                        display: none;
+                    }
+                }
+            --></style>
+         
+            
+            
+        </footer>
     </body>
 </html>
